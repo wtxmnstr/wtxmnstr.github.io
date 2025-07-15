@@ -1,0 +1,79 @@
+body {
+    background-color: #2a342d;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-color: #2a342d; }
+    50% { background-color: #1a2a1d; }
+    100% { background-color: #2a342d; }
+}
+
+/* Шапка */
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    color: #8b9e8b;
+    font-family: 'Abril Fatface', serif;
+    margin: 0;
+}
+
+/* Главный блок */
+.hero {
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://example.com/dark-anime-bg.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-family: "Manufacturing Consent", system-ui;
+    color: #8b9e8b;
+    font-size: 10rem;
+    margin-bottom: 20px;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    from { opacity: 0.8; }
+    to { opacity: 1; }
+}
+
+.hero-content p {
+  color: rgba(105, 105, 105, 0.8);
+  font-family: 'Marck Script', cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Секция с текстом */
+.about {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(34, 51, 34, 0.8);
+}
+
+.about h2 {
+    font-family: 'Abril Fatface', serif;
+    color: #8b9e8b;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(34, 51, 34, 0.8);
+}
